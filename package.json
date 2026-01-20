@@ -1,0 +1,21 @@
+{
+  "name": "micro-frontend-project",
+  "version": "1.0.0",
+  "description": "Micro Frontend project with Vue 2, Vue 3, React and Qiankun",
+  "scripts": {
+    "install:all": "cd main-app && npm install && cd ../sub-app && npm install && cd ../sub-app-react && npm install && cd ../sub-app-vue2 && npm install",
+    "dev:main": "cd main-app && npm run dev",
+    "dev:sub": "cd sub-app && npm run dev",
+    "dev:react": "cd sub-app-react && npm run dev",
+    "dev:vue2": "cd sub-app-vue2 && npm run dev"
+  },
+  "keywords": [
+    "micro-frontend",
+    "vue",
+    "vue2",
+    "react",
+    "qiankun"
+  ],
+  "author": "",
+  "license": "MIT"
+}

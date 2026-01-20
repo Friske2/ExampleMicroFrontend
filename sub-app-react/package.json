@@ -1,0 +1,21 @@
+{
+  "name": "sub-app-react",
+  "version": "1.0.0",
+  "description": "React micro frontend sub application",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.2",
+    "@vitejs/plugin-react-swc": "^4.2.2",
+    "vite": "^5.0.0",
+    "vite-plugin-qiankun": "^1.0.15"
+  }
+}

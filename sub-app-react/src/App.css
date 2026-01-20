@@ -1,0 +1,191 @@
+.react-app {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  background: linear-gradient(135deg, #282c34 0%, #1a1d23 100%);
+  border-radius: 12px;
+  color: #ffffff;
+  min-height: 400px;
+}
+
+.react-app .header {
+  text-align: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #61dafb;
+}
+
+.react-app .header h2 {
+  margin: 0 0 8px 0;
+  color: #61dafb;
+  font-size: 1.8em;
+}
+
+.react-app .subtitle {
+  color: #abb2bf;
+  margin: 0;
+  font-size: 0.95em;
+}
+
+.react-app .content {
+  display: grid;
+  gap: 16px;
+}
+
+.react-app .card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(97, 218, 251, 0.2);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.react-app .card h3 {
+  margin: 0 0 12px 0;
+  color: #61dafb;
+  font-size: 1.1em;
+}
+
+.react-app .props-card {
+  background: rgba(97, 218, 251, 0.1);
+}
+
+.react-app .props-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.react-app .prop-item {
+  padding: 8px 12px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.react-app .prop-item strong {
+  color: #61dafb;
+}
+
+/* Counter Styles */
+.react-app .counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 16px 0;
+}
+
+.react-app .counter-btn {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50%;
+  background: #61dafb;
+  color: #282c34;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.react-app .counter-btn:hover {
+  background: #4fa8c7;
+  transform: scale(1.1);
+}
+
+.react-app .count {
+  font-size: 48px;
+  font-weight: bold;
+  color: #61dafb;
+  min-width: 80px;
+  text-align: center;
+}
+
+.react-app .counter-note {
+  text-align: center;
+  color: #abb2bf;
+  font-size: 0.85em;
+  margin: 8px 0 0 0;
+}
+
+/* Event Buttons */
+.react-app .event-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.react-app .event-btn {
+  padding: 10px 16px;
+  background: #61dafb;
+  color: #282c34;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.react-app .event-btn:hover {
+  background: #4fa8c7;
+  transform: translateY(-2px);
+}
+
+/* Message Section */
+.react-app .message-section {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.react-app .message-input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid rgba(97, 218, 251, 0.3);
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  font-size: 0.9em;
+}
+
+.react-app .message-input::placeholder {
+  color: #6b7280;
+}
+
+.react-app .message-input:focus {
+  outline: none;
+  border-color: #61dafb;
+}
+
+/* State Info */
+.react-app .state-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.react-app .state-info p {
+  margin: 0;
+  padding: 6px 10px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.react-app .state-info strong {
+  color: #61dafb;
+}
+
+/* Features List */
+.react-app .features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.react-app .features-list li {
+  padding: 6px 0;
+  font-size: 0.9em;
+  color: #abb2bf;
+}
