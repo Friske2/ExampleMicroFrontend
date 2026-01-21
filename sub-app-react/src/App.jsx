@@ -3,6 +3,15 @@ import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
+  console.log("React Sub App: Rendered with count =", count);
+  // test get session storage props
+  const storedProps = sessionStorage.getItem("SUB_APP_REACT_PROPS");
+  console.log(
+    "React Sub App: Retrieved props from sessionStorage =",
+    storedProps,
+  );
+  // test react session storage props
+  sessionStorage.setItem("REACT_SUB_APP_TEST", "React Sub App is working!");
 
   return (
     <div className="react-app">

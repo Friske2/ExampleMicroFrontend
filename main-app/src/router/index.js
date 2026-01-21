@@ -11,17 +11,17 @@ const routes = [
     component: HomeView,
   },
   {
-    path: "/vue3",
+    path: "/vue3/:pathMatch(.*)*",
     name: "vue3",
     component: Vue3View,
   },
   {
-    path: "/react",
+    path: "/react/:pathMatch(.*)*",
     name: "react",
     component: ReactView,
   },
   {
-    path: "/vue2",
+    path: "/vue2/:pathMatch(.*)*",
     name: "vue2",
     component: Vue2View,
   },

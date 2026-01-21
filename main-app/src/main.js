@@ -32,7 +32,7 @@ const getSubAppProps = () => ({
 window.qiankunActions = actions;
 window.loadMicroApp = loadMicroApp;
 window.getSubAppProps = getSubAppProps;
-
+sessionStorage.setItem("SUB_APP_REACT_PROPS", JSON.stringify(getSubAppProps()));
 const app = createApp(App);
 app.use(router);
 app.mount("#app");
