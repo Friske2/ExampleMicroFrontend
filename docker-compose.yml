@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  main-app:
+    build: 
+      context: ./main-app
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    restart: always
+
+  sub-app:
+    build: 
+      context: ./sub-app
+      dockerfile: Dockerfile
+    ports:
+      - "3001:80"
+    restart: always
+
+  sub-app-react:
+    build: 
+      context: ./sub-app-react
+      dockerfile: Dockerfile
+    ports:
+      - "3002:80"
+    restart: always
+
+  sub-app-vue2:
+    build: 
+      context: ./sub-app-vue2
+      dockerfile: Dockerfile
+    ports:
+      - "3003:80"
+    restart: always

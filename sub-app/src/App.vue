@@ -8,7 +8,7 @@
     <div class="content">
       <!-- Props จาก Main App -->
       <div class="card props-card">
-        <h3>📥 Props จาก Main App</h3>
+        <h3>📥 Props จาก Main App ทดสอบ helloworld</h3>
         <div class="props-list">
           <div class="prop-item">
             <strong>User:</strong> {{ props?.user?.name }} ({{ props?.user?.email }})
