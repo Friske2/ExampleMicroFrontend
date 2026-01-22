@@ -1,20 +1,20 @@
 <template>
-  <div class="counter-view">
+  <div class="vue2-subapp__counter-view">
     <h3>🔢 Counter Page</h3>
     <p>ทดสอบ State Management ใน Vue 2 Router</p>
 
-    <div class="counter-card">
-      <div class="counter">
-        <button @click="decrement" class="counter-btn">-</button>
-        <span class="count">{{ count }}</span>
-        <button @click="increment" class="counter-btn">+</button>
+    <div class="vue2-subapp__counter-card">
+      <div class="vue2-subapp__counter">
+        <button @click="decrement" class="vue2-subapp__counter-btn">-</button>
+        <span class="vue2-subapp__count">{{ count }}</span>
+        <button @click="increment" class="vue2-subapp__counter-btn">+</button>
       </div>
-      <p class="counter-info">Counter: {{ count }}</p>
+      <p class="vue2-subapp__counter-info">Counter: {{ count }}</p>
     </div>
 
-    <div class="message-card">
+    <div class="vue2-subapp__message-card">
       <h4>📤 ส่งข้อความไปยัง Main App</h4>
-      <div class="message-input-group">
+      <div class="vue2-subapp__message-input">
         <input
           v-model="message"
           type="text"
@@ -70,16 +70,21 @@ export default {
 </script>
 
 <style scoped>
-.counter-view {
+.vue2-subapp__counter-view {
   padding: 20px;
 }
 
-.counter-view h3 {
+.vue2-subapp__counter-view h3 {
   margin-bottom: 10px;
   color: #e6a700;
 }
 
-.counter-card {
+.vue2-subapp__counter-view > p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.vue2-subapp__counter-card {
   background: #fffbeb;
   border: 1px solid #fcd34d;
   border-radius: 8px;
@@ -88,7 +93,7 @@ export default {
   margin-bottom: 16px;
 }
 
-.counter {
+.vue2-subapp__counter {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,7 +101,7 @@ export default {
   margin-bottom: 10px;
 }
 
-.counter-btn {
+.vue2-subapp__counter-btn {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -108,40 +113,40 @@ export default {
   transition: background 0.2s;
 }
 
-.counter-btn:hover {
+.vue2-subapp__counter-btn:hover {
   background: #d97706;
 }
 
-.count {
+.vue2-subapp__count {
   font-size: 2em;
   font-weight: bold;
   color: #b45309;
   min-width: 60px;
 }
 
-.counter-info {
+.vue2-subapp__counter-info {
   color: #92400e;
   margin: 0;
 }
 
-.message-card {
+.vue2-subapp__message-card {
   background: #fffbeb;
   border: 1px solid #fcd34d;
   border-radius: 8px;
   padding: 16px;
 }
 
-.message-card h4 {
+.vue2-subapp__message-card h4 {
   margin: 0 0 12px;
   color: #b45309;
 }
 
-.message-input-group {
+.vue2-subapp__message-input {
   display: flex;
   gap: 8px;
 }
 
-.message-input-group input {
+.vue2-subapp__message-input input {
   flex: 1;
   padding: 8px 12px;
   border: 1px solid #fcd34d;
@@ -149,7 +154,7 @@ export default {
   font-size: 14px;
 }
 
-.message-input-group button {
+.vue2-subapp__message-input button {
   padding: 8px 16px;
   background: #f59e0b;
   color: white;
@@ -159,7 +164,7 @@ export default {
   transition: background 0.2s;
 }
 
-.message-input-group button:hover {
+.vue2-subapp__message-input button:hover {
   background: #d97706;
 }
 </style>

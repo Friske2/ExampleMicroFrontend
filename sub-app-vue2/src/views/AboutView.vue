@@ -1,9 +1,9 @@
 <template>
-  <div class="about-view">
+  <div class="vue2-subapp__about">
     <h3>📖 เกี่ยวกับ</h3>
     <p>Vue 2 Sub App with Nested Router in Micro Frontend</p>
 
-    <div class="info-card">
+    <div class="vue2-subapp__info-card">
       <h4>🛠️ Tech Stack</h4>
       <ul>
         <li><strong>Vue:</strong> 2.7.16</li>
@@ -13,7 +13,7 @@
       </ul>
     </div>
 
-    <div class="info-card">
+    <div class="vue2-subapp__info-card">
       <h4>💡 วิธีการทำงาน</h4>
       <p>
         Sub App นี้มี Router ภายในของตัวเอง ทำให้สามารถมี navigation
@@ -30,16 +30,21 @@ export default {
 </script>
 
 <style scoped>
-.about-view {
+.vue2-subapp__about {
   padding: 20px;
 }
 
-.about-view h3 {
+.vue2-subapp__about h3 {
   margin-bottom: 10px;
   color: #e6a700;
 }
 
-.info-card {
+.vue2-subapp__about > p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.vue2-subapp__info-card {
   background: #fffbeb;
   border: 1px solid #fcd34d;
   border-radius: 8px;
@@ -47,22 +52,22 @@ export default {
   margin-bottom: 16px;
 }
 
-.info-card h4 {
+.vue2-subapp__info-card h4 {
   margin: 0 0 12px;
   color: #b45309;
 }
 
-.info-card ul {
+.vue2-subapp__info-card ul {
   margin: 0;
   padding-left: 20px;
 }
 
-.info-card li {
+.vue2-subapp__info-card li {
   margin-bottom: 6px;
   color: #92400e;
 }
 
-.info-card p {
+.vue2-subapp__info-card p {
   margin: 0;
   color: #92400e;
   line-height: 1.6;
